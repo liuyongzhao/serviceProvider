@@ -2,7 +2,7 @@ server:
   port: 8800
 spring:
   application:
-    name: cloud-client #\u4e3a\u4f60\u7684\u5e94\u7528\u8d77\u4e2a\u540d\u5b57\uff0c\u8be5\u540d\u5b57\u5c06\u6ce8\u518c\u5230eureka\u6ce8\u518c\u4e2d\u5fc3
+    name: cloud-provider #\u4e3a\u4f60\u7684\u5e94\u7528\u8d77\u4e2a\u540d\u5b57\uff0c\u8be5\u540d\u5b57\u5c06\u6ce8\u518c\u5230eureka\u6ce8\u518c\u4e2d\u5fc3
 eureka:
   instance:
     statusPageUrlPath: ${management.context-path}/info

@@ -5,7 +5,7 @@
 
 	<groupId>com.lyz.springClouud.client</groupId>
 	<artifactId>demo-cloud-client</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version><!--配合spring cloud版本 -->
 	<packaging>jar</packaging>
 
 	<name>springCloudClient</name>
@@ -19,6 +19,7 @@
 	</parent>
 
 	<properties>
+		<!--设置字符编码及java版本 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -26,6 +27,7 @@
 	</properties>
 
 	<dependencies>
+		<!--增加eureka-server的依赖 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
@@ -34,7 +36,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
-
+		 <!--用于测试的，本例可省略 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -56,12 +58,11 @@
 
 	<build>
 		<plugins>
+			<!--使用该插件打包 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
